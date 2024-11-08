@@ -1,0 +1,77 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+	box-sizing: border-box;
+	background-color: #181C14;
+}
+
+#conteneur_grid {
+	display: grid;
+	grid-template-columns: 200px 200px 200px 200px 200px auto;
+	grid-template-rows: 20px 200px 200px 200px 200px 200px 200px 20px;
+	grid-gap: 10px;
+	min-width: 1450px;
+	padding: 10px;
+	grid-template-areas:
+		". . page_garde page_garde page_garde page_garde"
+		"gauche_haut gauche_haut page_garde page_garde page_garde page_garde"
+		"gauche_haut gauche_haut page_garde page_garde page_garde page_garde"
+		"gauche_haut gauche_haut page_garde page_garde page_garde page_garde"
+		"gauche_bas gauche_bas  . . . ."
+		"gauche_bas gauche_bas  . . . ."
+		"gauche_bas gauche_bas . . . ."
+		". . . . . .";
+}
+
+#page_garde {
+	grid-area: page_garde;
+	text-align: center;
+	background-color: #3C3D37;
+	color: #ecdfcc;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+#gauche_haut {
+	display: grid;
+	grid-template-columns: 200px 200px 200px auto;
+	grid-template-rows: 80px 200px 200px 200px 80px;
+	grid-gap: 10px;
+	min-width: 1450px;
+	padding: 10px;
+	grid-template-areas:
+		"text_gauche_haut text_gauche_haut text_gauche_haut text_gauche_haut . ."
+		". lien1 lien1 lien1 lien1 ."
+		". lien2 lien2 lien2 lien2 ."
+		". lien3 lien3 lien3 lien3 ."
+		". lien4 lien4 lien4 lien4 .";
+}
+
+#text_gauche_haut {
+	grip-area: text_gauche_haut;
+}
+
+#lien1 {
+	grip-area: lien1;
+}
+
+#lien2 {
+	grip-area: lien2;
+}
+
+#lien3 {
+	grip-area: lien3;
+}
+
+#lien3 {
+	grip-area: lien3;
+}
+
+#gauche_bas {
+	grid-area: gauche_bas;
+	color: #ecdfcc;
+	border-radius: 30px;
+	background-color: #3c3d37;
+	padding: 10px;
+}
