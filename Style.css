@@ -1,77 +1,66 @@
 body {
-	padding: 0px;
-	margin: 0px;
-	font-family: Arial;
+	background-color: #222831;
 	box-sizing: border-box;
-	background-color: #181C14;
 }
 
-#conteneur_grid {
-	display: grid;
-	grid-template-columns: 200px 200px 200px 200px 200px auto;
-	grid-template-rows: 20px 200px 200px 200px 200px 200px 200px 20px;
-	grid-gap: 10px;
-	min-width: 1450px;
+h1 {
+	color: #EEEEEE;
+	border-style: solid;
+	border-width: 0px;
+	margin: 0;
+    font-size: 40px;
 	padding: 10px;
-	grid-template-areas:
-		". . page_garde page_garde page_garde page_garde"
-		"gauche_haut gauche_haut page_garde page_garde page_garde page_garde"
-		"gauche_haut gauche_haut page_garde page_garde page_garde page_garde"
-		"gauche_haut gauche_haut page_garde page_garde page_garde page_garde"
-		"gauche_bas gauche_bas  . . . ."
-		"gauche_bas gauche_bas  . . . ."
-		"gauche_bas gauche_bas . . . ."
-		". . . . . .";
+	background-color: #222831;
+	display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
-#page_garde {
-	grid-area: page_garde;
+body header p{
+	color: #eeeeee;
+	background-size: cover;
+	margin: 0;
+	border-style: solid;
+	border-width: 0px;
+	font-size: 20px;
+	padding: 2px 0px 10px 50px;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+}
+
+#trait {
+	background-size: cover;
+	border-style: solid;
+	border-width: 0px;
+	margin: 2px;
+	font-size: 100vw;
+	padding: 5px;
+	display: flex;
+	background-color: #393E46;
+}
+
+#date_de_naissance {
+	color: #eeeeee;
+	font-size: 15px;
+	text-align: left;
+	padding: 1px 0px 2px 2px;
+}
+
+#titre_présentation {
+	border-width: 0px;
+	background-color: #393E46;
+	color: #eeeeee;
+	padding: 5px 25px 5px 25px;
+	margin: 5px 25% 15px 25%;
+	border-radius: 30px;
 	text-align: center;
-	background-color: #3C3D37;
-	color: #ecdfcc;
-	border-radius: 30px;
-	padding: 10px;
+	font-size: 20px;
 }
 
-#gauche_haut {
-	display: grid;
-	grid-template-columns: 200px 200px 200px auto;
-	grid-template-rows: 80px 200px 200px 200px 80px;
-	grid-gap: 10px;
-	min-width: 1450px;
-	padding: 10px;
-	grid-template-areas:
-		"text_gauche_haut text_gauche_haut text_gauche_haut text_gauche_haut . ."
-		". lien1 lien1 lien1 lien1 ."
-		". lien2 lien2 lien2 lien2 ."
-		". lien3 lien3 lien3 lien3 ."
-		". lien4 lien4 lien4 lien4 .";
-}
-
-#text_gauche_haut {
-	grip-area: text_gauche_haut;
-}
-
-#lien1 {
-	grip-area: lien1;
-}
-
-#lien2 {
-	grip-area: lien2;
-}
-
-#lien3 {
-	grip-area: lien3;
-}
-
-#lien3 {
-	grip-area: lien3;
-}
-
-#gauche_bas {
-	grid-area: gauche_bas;
-	color: #ecdfcc;
-	border-radius: 30px;
-	background-color: #3c3d37;
-	padding: 10px;
+#titre_présentation:hover {
+	background-color: #00ADB5;
+	color: #eeeeee;
+	font-size: 25px;
+	text-shadow: #222831 0px 5px 5px;
 }
