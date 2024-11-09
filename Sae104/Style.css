@@ -4,7 +4,7 @@ body {
 	font-family: arial;
 }
 
-h1 {
+#haut_page {
 	color: #EEEEEE;
 	border-style: solid;
 	border-width: 0px;
@@ -14,10 +14,10 @@ h1 {
 	background-color: #222831;
 	display: flex;
     justify-content: left;
-    align-items: center;
+	grid-area: etiq_header;
 }
 
-body header p{
+#entête {
 	color: #eeeeee;
 	background-size: cover;
 	margin: 0;
@@ -39,6 +39,7 @@ body header p{
 	padding: 5px;
 	display: flex;
 	background-color: #393E46;
+	grid-area: trait;
 }
 
 #date_de_naissance {
@@ -46,9 +47,10 @@ body header p{
 	font-size: 15px;
 	text-align: left;
 	padding: 1px 0px 2px 2px;
+	grid-area: date;
 }
 
-#titre_présentation {
+#titre_présentation{
 	border-width: 0px;
 	background-color: #393E46;
 	padding: 5px 25px 5px 25px;
@@ -69,4 +71,79 @@ body header p{
 body div a {
 	text-decoration: none;
 	color: #EEEEEE;
+}
+
+aside {
+	grid-area: etiq_aside;
+	color: #eeeeee;
+	font-size: 18px;
+	background-color: #00ADB5;
+	padding: 10px;
+}
+
+#titre_formation:hover ~ aside #text_formation {
+	display: block;
+}
+
+#text_formation {
+	display: none;
+}
+
+#titre_exp_prof:hover ~ aside #text_exp_prof {
+	display: block;
+}
+
+#text_exp_prof {
+	display: none;
+}
+
+aside article {
+	font-family: italic;
+	text-align: justify;
+	background-color: none;
+	text-indent: 4em;
+	font-size: medium;
+}
+
+
+#conteneur_grid {
+	display: grid;
+	grid-template-columns: 100% 200px 200px 200px 200px 200px;
+	grid-template-rows: 100px 2vw 1vw 200px 200px 200px 200px 80px;
+	grid-gap: 10px;
+	min-width: 1450px;
+	padding: 10px;
+	grid-template-areas:
+		"etiq_header etiq_header etiq_header etiq_header etiq_header etiq_header"
+		"date date date date date date"
+		"trait trait trait trait trait trait"
+		"etiq_formation etiq_formation etiq_formation droite droite droite"
+		"exp_prof exp_prof exp_prof droite droite droite"
+		"loisirs loisirs loisirs droite droite droite"
+		"comp comp comp droite droite droite"
+		"cont cont cont droite droite droite";
+}
+
+#titre_formation {
+	grid-area: etiq_formation;
+}
+
+#titre_exp_prof {
+	grid-area: exp_prof;
+}
+
+#case_droite {
+	grid-area: droite;
+}
+
+#titre_loisirs {
+	grid_area: loisirs;
+}
+
+#titre_compétences {
+	grid-area: comp;
+}
+
+#titre_contacts {
+	grid-area: cont;
 }
