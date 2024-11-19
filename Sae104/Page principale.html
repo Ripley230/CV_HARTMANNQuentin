@@ -1,68 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quentin Hartmann - CV</title>
 	<link rel="stylesheet" href="Style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
 </head>
-
 <body>
-	<main id="conteneur_grid">
-		<header>
-			<h1 id="haut_page">Quentin Hartmann</h1>
-			<div id="haut_page"> <p id="entête">Etudiant à l'IUT de Colmar </p></div>
-		</header>
 
-		<p id="trait"> </p>
-		<p id="date_de_naissance">Né le 14.04.2006</p>
+<main id="conteneur_grid">
 
+	<header>
+		<img id="photo_profil" src="https://i.ibb.co/9ywz1GK/115948-558685-photo-id.png" alt="Photo de profil">
+		<div id="info_personnelles">
+			<h1>Quentin Hartmann</h1>
+			<p id="entete">Etudiant à l'IUT de Colmar</p>
+			<p id="date_de_naissance">Né le 14.04.2006</p>
+			<p id="objectifs">Objectif professionnel : Devenir un expert en réseaux et télécommunications</p>
+			<p> Adresse postale : <a id="lien" href="https://www.google.fr/maps/place/57+Rue+du+Grillenbreit,+68000+Colmar/@48.0779026,7.3687937,17z/data=!3m1!4b1!4m6!3m5!1s0x479165fc0a518669:0x48d81c071518d21c!8m2!3d48.077899!4d7.3713686!16s%2Fg%2F11cpcjrlw3?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">57 Rue du Grillenbreit, 68000 Colmar</a></p>
+			<p>Email : <a id="lien" href="mailto:quentinhartmann13@gmail.com"> quentinhartmann13@gmail.com </a></p>
+		</div>
+	</header>
 
-		<div id="titre_présentation">
-			<div id="titre_fomation">
-				<a href="Formation.html"> <p> Formation </p></a>
+	<div id="trait"></div>
+
+	<section id="formation">
+		<h2> <a id="lien_page" href="Formation.html"> Formation </a> </h2>
+		<ul>
+			<li> <a id="lien" href="https://www.iutcolmar.uha.fr/index.php/formations/diplomes/bachelor-universitaire-de-technologie-b-u-t-bac-3/b-u-t-reseaux-et-telecommunications/"> IUT de Colmar - BUT Réseaux et Télécommunications</a></li>
+			<li> <a id="lien" href="https://www.donbosco-landser.net/"> Collège / Lycée - Don Bosco Landser</a></li>
+		</ul>
+	</section>
+
+	<section id="diplomes">
+		<h2> <a id="lien_page" href="Diplomes.html"> Diplômes </a> </h2>
+		<ul>
+			<li> Baccalauréat </li>
+		</ul>
+	</section>
+
+	<section id="experience">
+		<h2> <a id="lien_page" href="Expérience_Professionnelle.html"> Expérience Professionnelle </a> </h2>
+		<ul>
+			<li> Stage en entreprise </li>
+		</ul>
+	</section>
+
+	<section id="competences">
+		<h2> <a id="lien_page" href="Compétences.html"> Compétences </a> </h2>
+		<div class="flexbox">
+			<div class="flex-item">
+				<h3>Compétences RT</h3>
+				<ul>
+					<li>Réseaux</li>
+					<li>Télécommunications</li>
+				</ul>
+			</div>
+			<div class="flex-item">
+				<h3>Autres compétences techniques</h3>
+				<ul>
+					<li>Programmation</li>
+					<li>Bases de données</li>
+				</ul>
+			</div>
+			<div class="flex-item">
+				<h3>Compétences humaines</h3>
+				<ul>
+					<li>Travail en équipe</li>
+					<li>Communication</li>
+				</ul>
 			</div>
 		</div>
+	</section>
 
-		<div id="titre_présentation">
-			<div id="titre_exp_prof">
-				<a href="Expérience_Professionnelle.html"> <p> Expérience Professionnelle </p></a>
-			</div>
-		</div>
+	<section id="divers">
+		<h2> <a id="lien_page" href="Informations_diverses.html"> Informations diverses </a> </h2>
+		<ul>
+			<li>Langues : Anglais (niveau B2), Allemand (niveau A2)</li>
+			<li>Sports : Football, Natation</li>
+			<li>Hobbies : Photographie, Lecture</li>
+		</ul>
+	</section>
 
-		<div id="titre_présentation">
-			<div id="titre_loisirs">
-				<a href="Loisirs.html"> <p> Loisirs </p> </a>
-			</div>
-		</div>
+</main>
 
-		<div id="titre_présentation">
-			<div id="titre_compétences">
-				<a href="Compétences.html"> <p> Compétences </p> </a>
-			</div>
-		</div>
-
-		<div id="titre_présentation">
-			<div id="titre_contacts">
-				<a href="Contact.html"> <p> Contact </p> </a>
-			</div>
-		</div>
-
-
-
-		<aside id="case_droite">
-			<p>Petit résumer des informations (cliquer sur la bulle pour acceder à la page complète)</p>
-			<article id="text_formation">
-				<p>
-					Formation
-				</p>
-			</article>
-			<article id="text_exp_prof">
-				<p>
-					Experiences Professionnelles
-				</p>
-			</article>
-		</aside>
-	</main>
 </body>
 </html>

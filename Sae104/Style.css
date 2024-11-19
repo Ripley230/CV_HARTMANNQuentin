@@ -1,149 +1,102 @@
 body {
-	background-color: #222831;
+	--bg-color: #222831;
+	--text-color: #EEEEEE;
+	--accent-color: #00ADB5;
+	--secondary-color: #393E46;
+	background-color: var(--bg-color);
+	font-family: Arial, sans-serif;
+	color: var(--text-color);
+	margin: 0;
+	padding: 20px;
 	box-sizing: border-box;
-	font-family: arial;
 }
 
-#haut_page {
-	color: #EEEEEE;
-	border-style: solid;
-	border-width: 0px;
-	margin: 0;
-    font-size: 40px;
-	padding: 10px;
-	background-color: #222831;
+#lien:hover {
+text-decoration: none;
+color: var(--accent-color);
+}
+
+#lien_page {
+	color: var(--accent-color);
+}
+
+#lien_page:hover {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+#conteneur_grid {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
 	display: flex;
-    justify-content: left;
-	grid-area: etiq_header;
+	align-items: center;
+	background-color: var(--bg-color);
+	padding: 20px;
 }
 
-#entête {
-	color: #eeeeee;
-	background-size: cover;
+#photo_profil {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+#info_personnelles {
+	flex-grow: 1;
+}
+
+h1 {
+	font-size: 40px;
 	margin: 0;
-	border-style: solid;
-	border-width: 0px;
+}
+
+#entete {
 	font-size: 20px;
-	padding: 2px 0px 10px 50px;
-	display: flex;
-	justify-content: left;
-	align-items: left;
-}
-
-#trait {
-	background-size: cover;
-	border-style: solid;
-	border-width: 0px;
-	margin: 2px;
-	font-size: 100vw;
-	padding: 5px;
-	display: flex;
-	background-color: #393E46;
-	grid-area: trait;
+	margin: 10px 0;
 }
 
 #date_de_naissance {
-	color: #eeeeee;
 	font-size: 15px;
-	text-align: left;
-	padding: 1px 0px 2px 2px;
-	grid-area: date;
 }
 
-#titre_présentation{
-	border-width: 0px;
-	background-color: #393E46;
-	padding: 5px 25px 5px 25px;
-	margin: 5px 25% 2% 25%;
-	border-radius: 30px;
-	text-align: center;
-	font-size: 20px;
+#trait {
+	background-color: var(--secondary-color);
+	height: 2px;
+	margin: 20px 0;
 }
 
-#titre_présentation:hover {
-	background-color: #00ADB5;
-	color: #eeeeee;
-	font-size: 25px;
-	text-shadow: #222831 0px 5px 5px;
-	border-radius: 50px;
+section {
+	margin-bottom: 30px;
 }
 
-body div a {
+h2 {
+	color: var(--accent-color);
+}
+
+a {
+	color: var(--text-color);
 	text-decoration: none;
-	color: #EEEEEE;
 }
 
-aside {
-	grid-area: etiq_aside;
-	color: #eeeeee;
-	font-size: 18px;
-	background-color: #00ADB5;
-	padding: 10px;
+a:hover {
+	text-decoration: underline;
 }
 
-#titre_formation:hover ~ aside #text_formation {
-	display: block;
+.flexbox {
+	display: flex;
+	justify-content: space-between;
 }
 
-#text_formation {
-	display: none;
+.flex-item {
+	flex-basis: 30%;
+	background-color: var(--secondary-color);
+	padding: 15px;
+	border-radius: 10px;
 }
 
-#titre_exp_prof:hover ~ aside #text_exp_prof {
-	display: block;
-}
-
-#text_exp_prof {
-	display: none;
-}
-
-aside article {
-	font-family: italic;
-	text-align: justify;
-	background-color: none;
-	text-indent: 4em;
-	font-size: medium;
-}
-
-
-#conteneur_grid {
-	display: grid;
-	grid-template-columns: 100% 200px 200px 200px 200px 200px;
-	grid-template-rows: 100px 2vw 1vw 200px 200px 200px 200px 80px;
-	grid-gap: 10px;
-	min-width: 1450px;
-	padding: 10px;
-	grid-template-areas:
-		"etiq_header etiq_header etiq_header etiq_header etiq_header etiq_header"
-		"date date date date date date"
-		"trait trait trait trait trait trait"
-		"etiq_formation etiq_formation etiq_formation droite droite droite"
-		"exp_prof exp_prof exp_prof droite droite droite"
-		"loisirs loisirs loisirs droite droite droite"
-		"comp comp comp droite droite droite"
-		"cont cont cont droite droite droite";
-}
-
-#titre_formation {
-	grid-area: etiq_formation;
-}
-
-#titre_exp_prof {
-	grid-area: exp_prof;
-}
-
-#case_droite {
-	grid-area: droite;
-}
-
-#titre_loisirs {
-	grid_area: loisirs;
-}
-
-#titre_compétences {
-	grid-area: comp;
-}
-
-#titre_contacts {
-	grid-area: cont;
+ul {
+	padding-left: 20px;
 }
