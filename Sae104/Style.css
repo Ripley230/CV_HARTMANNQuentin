@@ -11,13 +11,17 @@ body {
 	box-sizing: border-box;
 }
 
+#lien {
+	font-style: italic;
+}
+
 #lien:hover {
-text-decoration: none;
-color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 #lien_page {
 	color: var(--accent-color);
+	font-style: italic;
 }
 
 #lien_page:hover {
@@ -99,4 +103,13 @@ a:hover {
 
 ul {
 	padding-left: 20px;
+}
+
+#signature {
+	grid-area: label_auteur;
+	color: gray;
+	font-size: 0.8em;
+	align-self: end;
+	padding: 5px;
+	text-align: center;
 }
