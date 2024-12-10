@@ -158,3 +158,46 @@ ul {
 ul {
 	padding-left: 20px;
 }
+
+article {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.formation-section {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.formation-content {
+	flex: 1;
+}
+
+#etablissement-image {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+	color: var(--accent-color);
+	margin-bottom: 15px;
+}
+
+ul {
+	padding-left: 20px;
+	margin: 0;
+}
+
+ul ul {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+li {
+	margin-bottom: 10px;
+}
