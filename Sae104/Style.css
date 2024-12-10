@@ -138,66 +138,72 @@ ul {
 	opacity: 1;
 }
 
-.arrow-up {
-	display: inline-block;
+.formation-content {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
 }
 
- .competence-section {
-	 display: flex;
-	 align-items: flex-start;
-	 margin-bottom: 30px;
- }
+#etablissement-image {
+	float: right;
+	margin-left: 20px;
+	max-width: 300px;
+	border-radius: 25px;
+}
+
+.formation-content ul {
+	flex: 1;
+}
+
+/* Styles spécifiques à la page des compétences en réseaux et télécommunications */
+#competences-page {
+	font-family: Arial, sans-serif; /* Exemple de police */
+}
+
+.rt-competence-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.rt-competence-content {
+	flex: 1;
+	padding-right: 20px;
+}
+
+.rt-competence-image {
+	width: 300px;
+	height: auto;
+	border-radius: 10px; /* Bords arrondis */
+	object-fit: cover; /* Pour garder le ratio de l'image */
+}
+
+.rt-section {
+	border-bottom: 1px solid #ccc; /* Trait de séparation */
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.rt-section:last-child {
+	border-bottom: none; /* Supprime le trait pour la dernière section */
+}
+
+.competence-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
 .competence-content {
 	flex: 1;
 	padding-right: 20px;
 }
+
 .competence-image {
 	width: 300px;
 	height: auto;
-}
-ul {
-	padding-left: 20px;
-}
-
-article {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-}
-
-.formation-section {
-	display: flex;
-	align-items: flex-start;
-	gap: 20px;
-}
-
-.formation-content {
-	flex: 1;
-}
-
-#etablissement-image {
-	width: 300px;
-	height: 200px;
+	border-radius: 10px;
 	object-fit: cover;
-	border-radius: 15px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-	color: var(--accent-color);
-	margin-bottom: 15px;
-}
-
-ul {
-	padding-left: 20px;
-	margin: 0;
-}
-
-ul ul {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-li {
-	margin-bottom: 10px;
 }
