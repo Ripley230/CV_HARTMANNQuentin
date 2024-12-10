@@ -11,36 +11,94 @@ body {
 	box-sizing: border-box;
 }
 
-#conteneur_grid {
-	max-width: 1200px;
-	margin: 0 auto;
-	display: grid;
-	gap: 30px;
+#lien {
+	font-style: italic;
 }
 
-h1, h2, h3 {
+#lien:hover {
 	color: var(--accent-color);
 }
 
-.competence-section {
+#lien_page {
+	color: var(--accent-color);
+	font-style: italic;
+}
+
+#lien_page:hover {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+#conteneur_grid {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
 	display: flex;
-	align-items: flex-start;
-	margin-bottom: 30px;
-	border-bottom: 1px solid var(--secondary-color);
-	padding-bottom: 20px;
+	align-items: center;
+	background-color: var(--bg-color);
+	padding: 0px;
 }
 
-.competence-content {
-	flex: 1;
-	padding-right: 20px;
+#photo_profil {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-right: 20px;
 }
 
-.competence-image {
-	width: 300px;
-	height: auto;
-	border: 2px solid var(--secondary-color);
-	border-radius: 8px;
-	padding: 5px;
+#info_personnelles {
+	flex-grow: 1;
+}
+
+h1 {
+	font-size: 40px;
+	margin: 0;
+}
+
+#entete {
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+#date_de_naissance {
+	font-size: 15px;
+}
+
+#trait {
+	background-color: var(--secondary-color);
+	height: 2px;
+	margin: 5px;
+}
+
+section {
+	margin-bottom: 10px;
+}
+
+h2 {
+	color: var(--accent-color);
+}
+
+a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-item {
+	flex-basis: 30%;
+	background-color: var(--secondary-color);
+	padding: 15px;
+	border-radius: 10px;
 }
 
 ul {
@@ -84,18 +142,19 @@ ul {
 	display: inline-block;
 }
 
-/* Styles supplémentaires pour améliorer la mise en page */
-#competences-annexes .competence-section {
-	border-bottom: none;
-	padding-bottom: 0;
+ .competence-section {
+	 display: flex;
+	 align-items: flex-start;
+	 margin-bottom: 30px;
+ }
+.competence-content {
+	flex: 1;
+	padding-right: 20px;
 }
-
-#competences-annexes h3 {
-	margin-top: 0;
+.competence-image {
+	width: 300px;
+	height: auto;
 }
-
-#certifications, #projets-personnels {
-	background-color: var(--secondary-color);
-	padding: 20px;
-	border-radius: 8px;
+ul {
+	padding-left: 20px;
 }
