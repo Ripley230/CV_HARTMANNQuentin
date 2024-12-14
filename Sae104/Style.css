@@ -208,3 +208,8 @@ ul {
 	border-radius: 10px;
 	object-fit: cover;
 }
+
+#lien_signature {
+	font-style: italic;
+	color: gray;
+}
